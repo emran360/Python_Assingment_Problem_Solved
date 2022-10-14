@@ -1,6 +1,6 @@
 
 # Challenge One
-years_of_service_time = int(input('Enter Your Years of Service Time: '))
+years_of_service_time = int(input('Enter Your Years of Service Time Now: '))
 salary = int(input('Enter your salary: '))
 
 if years_of_service_time >= 5:
