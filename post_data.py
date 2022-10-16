@@ -37,10 +37,29 @@ post_data = [
     }, ]
 
 # Your Code Start from here
+# example Output:
+#{
+#      'userId': 'Alex Gates',
+#      'id': 5,
+#      'title': ' nesciunt quas odio',
+#      'body': 'repudiandae veniam quaerat sunt sed.....',
+#      'slug': '-nesciunt-quas-odio'
+# }
 
+# for post_title in post_data:
+#     title = post_title.get('title').strip()
+#     url = title.replace(' ','-')
+#     post_title.update({"slug": url})
+
+
+for post_title in post_data:
+    title = post_title.get('title')
+    stripped_title = title.strip()
+    url = stripped_title.replace(' ','-')
+    post_title.update({"slug": url})
 
 
 
 # Your code ends here
 
-print(post_data[4])
+print(post_data[5])
